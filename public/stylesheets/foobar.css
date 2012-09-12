@@ -50,11 +50,13 @@ a:hover {
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff62382d', endColorstr='#ff3a1f23', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
   cursor: pointer;
+  color: #ead978;
 }
 
 /* Header */
 #banner {
   float:right;
+  padding-right: 20px;
 }
 
 #logo {

@@ -1,0 +1,7 @@
+body {
+  background: url('../images/bg_drip.png') no-repeat center top #A39963;
+}
+
+#home_photos, #home_stream, .secondary_page_content {
+  background-color: white;
+}
