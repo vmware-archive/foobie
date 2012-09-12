@@ -1,0 +1,85 @@
+doctype 5
+html(lang='en')
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    //
+       Le styles et javascript
+    link(rel='stylesheet', href='http://foobarbar.cloudfoundry.com/resources/css/bootstrap.css')
+    link(href='http://foobarbar.cloudfoundry.com/resources/css/bootstrap-responsive.css', rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/foobar.css')
+    link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Rokkitt:400,700')
+    script(type='text/javascript', src='/javascripts/foobar.js')
+
+    //
+       Le fav and touch icons
+    link(rel='shortcut icon', href='/images/favicon.ico')
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='http://foobarbar.cloudfoundry.com/resources/ico/apple-touch-icon-144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='http://foobarbar.cloudfoundry.com/resources/ico/apple-touch-icon-114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='http://foobarbar.cloudfoundry.com/resources/ico/apple-touch-icon-72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', href='http://foobarbar.cloudfoundry.com/resources/ico/apple-touch-icon-57-precomposed.png')
+    //
+       Le HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+      link(rel='stylesheet', href='/stylesheets/ie.css')
+  body(id=bodyid)
+    #header
+      #banner
+        a(href='/how')
+          img(src='/images/banner.png')
+      #logo
+        a(href='/')
+          img(src='/images/logo_foobar.png')
+    #main
+      #nav
+        ul
+          li
+            a(href='#')
+              span.nav_header Explore
+              br
+              span.nav_subhead products
+          li#nav_contest
+            a(href='#')
+              span.nav_header Join
+              br
+              span.nav_subhead the contest
+          li#nav_gallery
+            a#gallerylink(href='/gallery')
+              span.nav_header View
+              br
+              span.nav_subhead the contest gallery
+          li
+            #nav_download
+              a(href='#')
+                span.nav_header Download
+                br
+                span.nav_subhead the mobile apps
+            #nav_icons_mobile
+              ul
+                li#nav_icon_android
+                  a(href='#')
+                li#nav_icon_apple
+                  a(href='#')
+          li
+            #nav_cart
+              ul
+                li#nav_icon_cart
+                  a(href='#')
+          li#nav_last
+      #content
+      block content
+      #icons_sharing
+        a(href='#', onclick='return gclick()')
+          img#google(src='/images/icon_social_g+.png')
+        a(href='https://twitter.com/intent/tweet?text=Check out the Foo Bar from Cloud Foundry&url=http://foobarbar.cloudfoundry.com&related=cloudfoundry', onclick='return poptweet(\'https://twitter.com/intent/tweet?text=Check out the Foo Bar from Cloud Foundry&url=http://foobarbar.cloudfoundry.com&related=cloudfoundry\')')
+          img#twitter(src='/images/icon_social_twitter.png')
+        a(href='http://www.facebook.com/share.php?u=<;url>', onclick='return fbs_click()')
+          img(src='/images/icon_social_fb.png')
+    #footer
+      | ©
+      script(type='text/javascript')
+        var d = new Date(); document.write(d.getFullYear());
+      |  VMware, Inc. All rights reserved.

@@ -1,0 +1,66 @@
+extends layout
+
+block content
+  #billboard
+    #billboard_left
+      img(src='/images/billboard_chocolate_trio.png')
+    #billboard_right
+      img#billboard_header(src='/images/text_chocolate.png')
+      span#ampersand &
+      span#billboard_subhead Placeholder copy
+      br
+      #billboard_text
+        | Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+      br
+      .learn-more
+        a.btn-foobar Learn More
+  #home_photos
+    h1 Most Popular Contest Photos
+    a(href='#')
+      .photo
+        .overlay-box
+          .overlay-text
+            | 621
+    a(href='#')
+      .photo
+        #post_photos
+          span#plus_sign +
+          span.text_post Post
+          br
+          span.text_yourphotos your photos
+  #home_stream
+    h1 Social Stream
+    #home_stream_inner
+      script(src='http://widgets.twimg.com/j/2/widget.js')
+      script
+        new TWTR.Widget({
+        version: 2,
+        type: 'search',
+        search: 'node.js',
+        interval: 20000,
+        title: '',
+        subject: '',
+        width: 240,
+        height: 270,
+        theme: {
+        shell: {
+        background: '#ffffff',
+        color: '#eeeeee'
+        },
+        tweets: {
+        background: '#ffffff',
+        color: '#444444',
+        links: '#0a96c5'
+        }
+        },
+        features: {
+        scrollbar: false,
+        loop: true,
+        live: true,
+        hashtags: true,
+        timestamp: true,
+        avatars: true,
+        toptweets: true,
+        behavior: 'default'
+        }
+        }).render().start();
