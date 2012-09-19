@@ -6,11 +6,11 @@ Foobie the Foo Bar Marketing App
 To deploy to Cloud Foundry:
 
 ```bash
-git clone git@github.com:cloudfoundry-samples/foobie.git
-cd foobie
-npm install express
-npm install jade
-vmc push <yourappname> --runtime=node08
+$ git clone git@github.com:cloudfoundry-samples/foobie.git
+$ cd foobie
+$ npm install express
+$ npm install jade
+$ vmc push <yourappname> --runtime=node08
 
 Would you like to deploy from the current directory? [Yn]:
 Detected a Node.js Application, is this correct? [Yn]:
@@ -29,15 +29,16 @@ Uploading Application:
 Push Status: OK
 Staging Application '<yourappname>': OK
 Starting Application '<yourappname>': OK
+```
 
 To update your app:
 
 ```bash
-vmc update <yourappname>
+$ vmc update <yourappname>
 ```
 
 To run app locally:
 
 ```bash
-node app.js
+$ node app.js
 ```
