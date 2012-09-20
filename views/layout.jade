@@ -2,7 +2,6 @@ doctype 5
 html(lang='en')
   head
     title= title
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='')
     meta(name='author', content='')
     //
@@ -70,14 +69,14 @@ html(lang='en')
                   a(href='http://foobmv.cloudfoundry.com/cart')
           li#nav_last
       #content
-      block content
-      #icons_sharing
-        a(href='#', onclick='return gclick()')
-          img#google(src='/images/icon_social_g+.png')
-        a(href='https://twitter.com/intent/tweet?text=Check out the Foo Bar from Cloud Foundry&url=http://foobarbar.cloudfoundry.com&related=cloudfoundry', onclick='return poptweet(\'https://twitter.com/intent/tweet?text=Check out the Foo Bar from Cloud Foundry&url=http://foobarbar.cloudfoundry.com&related=cloudfoundry\')')
-          img#twitter(src='/images/icon_social_twitter.png')
-        a(href='http://www.facebook.com/share.php?u=<;url>', onclick='return fbs_click()')
-          img(src='/images/icon_social_fb.png')
+        block content
+        #icons_sharing
+          a(href='#', onclick='return gclick()')
+            img#google(src='/images/icon_social_g+.png')
+          a(href='https://twitter.com/intent/tweet?text=Check out the Foo Bar from Cloud Foundry&url=http://foobarbar.cloudfoundry.com&related=cloudfoundry', onclick='return poptweet(\'https://twitter.com/intent/tweet?text=Check out the Foo Bar from Cloud Foundry&url=http://foobarbar.cloudfoundry.com&related=cloudfoundry\')')
+            img#twitter(src='/images/icon_social_twitter.png')
+          a(href='http://www.facebook.com/share.php?u=<;url>', onclick='return fbs_click()')
+            img(src='/images/icon_social_fb.png')
     #footer
       | ©
       script(type='text/javascript')

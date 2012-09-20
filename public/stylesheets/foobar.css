@@ -202,7 +202,7 @@ a:hover {
 }
 
 #billboard_left {
-  margin:-50px 30px 0 0;
+  margin:-43px 30px 0 0;
   float: left;
   width: 490px;
 }
@@ -363,7 +363,7 @@ a:hover {
 
 /* Secondary pages */
 .secondary_page_content {
-  margin: -37px 0 0 0;
+  margin: -30px 0 0 0;
   min-height:300px;
   padding: 5px 20px;
   float:left;
