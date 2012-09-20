@@ -189,6 +189,8 @@ a:hover {
 #content {
   padding-bottom: 50px;
   min-height: 100%;
+  width: 950px;
+  margin: 0 auto;
 }
 
 /* Homepage billboard */
@@ -255,14 +257,14 @@ a:hover {
 }
 
 #home_stream {
-  width: 270px;
+  width: 210px;
   background: url('../images/drip_box_social_stream_upper_left.png') top left no-repeat, url('../images/drip_box_social_stream_upper_right.png') top right no-repeat rgba(255,255,255,0.5);
 }
 
 #home_stream_inner {
   background-color: #ffffff;
   border: 1px solid #a39963;
-  width:240px;
+  width:180px;
   height:270px;
   padding: 7px 14px;
 }
@@ -363,11 +365,11 @@ a:hover {
 
 /* Secondary pages */
 .secondary_page_content {
-  margin: -30px 0 0 0;
+  margin: -30px 0 0 35px;
   min-height:300px;
   padding: 5px 20px;
   float:left;
-  width:920px;
+  width:810px;
   background: url('../images/drip_box_photos_upper_left.png') top left no-repeat, url('../images/drip_box_photos_upper_right.png') top right no-repeat rgba(255,255,255,0.5);
 }
 
